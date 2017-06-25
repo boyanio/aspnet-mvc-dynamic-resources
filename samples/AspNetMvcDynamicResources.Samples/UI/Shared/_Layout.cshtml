@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic resource registration samples</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    @Styles.Render("~/bundles/common/stylesheets")
+    @Html.RenderDynamicStyleSheets()
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script>
+        var app = angular.module("aspNetMvcDynamicResources.samples", []);
+    </script>
+    @Scripts.Render("~/bundles/common/scripts")
+    @Html.RenderDynamicScripts()
+    <script>
+        angular.bootstrap(document, [app.name]);
+    </script>
+</body>
+</html>

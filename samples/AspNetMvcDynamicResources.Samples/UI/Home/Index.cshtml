@@ -1,0 +1,14 @@
+﻿@{ 
+    Html.RegisterDynamicStyleSheet("/UI/Home/home.css");
+}
+
+<div class="jumbotron">
+    <h1>Dynamic resource registration</h1>
+    <p class="lead">This page consists of partial views and all resources are registered individually.</p>
+</div>
+
+<div class="row">
+    @Html.Action("Index", "StaticBlock", new { index = 1 })
+    @Html.Action("Index", "StaticBlock", new { index = 2 })
+    @Html.Action("Index", "DynamicBlock")
+</div>

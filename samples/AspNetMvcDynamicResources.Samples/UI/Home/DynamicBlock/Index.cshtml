@@ -1,0 +1,9 @@
+﻿@{
+    Html.RegisterDynamicScript("/UI/Home/DynamicBlock/DynamicBlockCtrl.js");
+}
+<div class="col-md-4" ng-controller="DynamicBlockCtrl as ctrl">
+    <h2>AJAX content</h2>
+    <p>The content of this box will change after you press the button below.</p>
+    <div id="dynamic-content" ng-bind-html="ctrl.content"></div>
+    <p ng-show="!ctrl.content"><button class="btn btn-default" ng-click="ctrl.update()" ng-disabled="ctrl.isUpdating">Update &raquo;</button></p>
+</div>

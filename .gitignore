@@ -1,0 +1,11 @@
+.vs
+*.user
+packages
+bin
+obj
+/samples/AspNetMvcDynamicResources.Samples/assets/js/mvcPartialViewLoader.js
+/samples/AspNetMvcDynamicResources.Samples/assets/js/mvcPartialViewLoader.js.map
+/samples/AspNetMvcDynamicResources.Samples/UI/Home/DynamicBlock/updated.js
+/samples/AspNetMvcDynamicResources.Samples/UI/Home/DynamicBlock/updated.js.map
+/samples/AspNetMvcDynamicResources.Samples/UI/Home/DynamicBlock/DynamicBlockCtrl.js
+/samples/AspNetMvcDynamicResources.Samples/UI/Home/DynamicBlock/DynamicBlockCtrl.js.map
